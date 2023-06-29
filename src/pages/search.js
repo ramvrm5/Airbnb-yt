@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import React from 'react';
 import { format, isValid } from "date-fns";
 import InfoCard from '@/components/InfoCard';
+import Map from '@/components/Map';
 
 const Search = ({ searchResults }) => {
     const router = useRouter();
@@ -44,6 +45,10 @@ const Search = ({ searchResults }) => {
                             <InfoCard key={i} img={img} location={location} description={description} title={title} star={star} price={price} total={total} />
                         ))}
                     </div>
+                </section>
+
+                <section className='hidden xl:inline-flex xl:min-w-[600px]'>
+                    <Map searchResults={searchResults} />
                 </section>
             </main>
 
