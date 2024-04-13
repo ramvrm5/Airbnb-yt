@@ -9,7 +9,7 @@ import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 
 import 'react-date-range/dist/theme/default.css'; // theme css file
-
+s
 import { useRouter } from 'next/router';
 
 const Header = ({ placeholder }) => {
